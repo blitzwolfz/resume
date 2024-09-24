@@ -1,0 +1,142 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+%\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+\renewcommand{\labelitemi}{\(\diamond\)}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+    {\Huge \scshape {Sammy Qureshi}}\\
+    www.samq.ca $\cdot$ saminm.qureshi@gmail.com $\cdot$ (647) 916-2963 \\
+    www.linkedin.com/in/saminqureshi $\cdot$ www.github.com/blitzwolfz\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Computer Programming \& Analysis Advanced Diploma} \hfill cGPA: 3.82\\ 
+George Brown College \hfill Jan 2024 - Present\\
+\vspace{1mm}
+\vspace{4mm}
+
+%==== Experience ====%
+\header{Internship and Work Experience}
+\textbf{Software Developer} \hfill Toronto, Ontario\\
+\textit{Rack-I} \hfill Feb 2023 - Aug 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Spearheaded the development of the backend infrastructure, utilizing NodeJS, Express, and MongoDB to enhance data retrieval speed by 30\%
+    \item Collaborated with the front-end team to streamline the core application, reducing bugs by 20\% through rigorous code reviews and testing
+    \item Led the account setup process for backend software, cutting deployment time by 25\% and boosting security protocols
+\end{itemize}
+\textbf{Hardware \& Software Analyst Intern} \hfill Toronto, Ontario\\
+\textit{Ryerson University} \hfill Sept 2022 - April 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Played a crucial role in designing an internal database for managing sensitive information, cutting data entry errors by 15\% via enhanced validation
+    \item Led the deployment of over 50 new devices, ensuring all hardware adhered to policy and compliance standards
+    \item Managed the secure decommissioning of outdated hardware, safely wiping over 100 devices, with zero security incidents
+\end{itemize}
+\textbf{Data Clerk Intern} \hfill Toronto, Ontario\\
+\textit{Learning Enrichment Foundation} \hfill June 2022 - Sept 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Efficiently handled client data within the CRM, reducing data processing time by 20\% through optimized protocols
+    \item Worked in an Agile SCRUM environment to enhance CRM and front-end functionalities, increasing user satisfaction by 10\% based on feedback
+    \item Authored detailed documentation for Agile best practices, helping reduce project completion time by 15\%
+\end{itemize}
+\vspace{4mm}
+
+%==== Projects ====%
+\header{Technical Experience}
+{\textbf{Meme Royale}} {\sl TypeScript, JavaScript, MongoDB, JSON} \hfill https://github.com/blitzwolfz/MemeRoyale\\
+Developed a backend system to manage an online tournament, enhancing moderation efficiency by 25\%. The project features tools for moderation, user management, and API data retrieval, utilizing both functional and object-oriented programming paradigms.\\
+\vspace*{3mm}
+{\textbf{Pokedex}} {\sl TypeScript, JavaScript, HTML, Axios, Tailwind CSS, Vite} \hfill https://blitzwolfz.xyz\\
+A modern Pokédex website built to reinforce API integration skills and frontend development. The project features cookie caching, search, and supports mobile-first design and PWA functionality.\\
+\vspace*{4mm}
+{\textbf{Red}} {\sl Java} \hfill https://github.com/blitzwolfz/Red\\
+A lightweight interpreter designed to delve into the core concepts of interpreter design and programming languages. Implemented object-oriented principles, including inheritance and polymorphism, and successfully executed over 100 test cases.\\
+\vspace*{4mm}
+
+
+%==== Technical Skills ====%
+\header{Technical Skills}
+\begin{tabular}{ l l }
+    \textbf{Languages}:              & Java, TypeScript, Python, SQL                                        \\
+    \textbf{Frameworks}:             & NodeJS, SQLite, PyUnit                                                         \\
+    \textbf{Libraries}:              & Express, Axios, JSON                                     \\
+    \textbf{Tools and Technologies}: & Git, MongoDB, LaTeX, Excel, MySQL                     \\
+    \textbf{Interests}:              & Language Design, Natural Language Processing, Game Development \\
+\end{tabular}
+\vspace{4mm}
+
+\end{document}

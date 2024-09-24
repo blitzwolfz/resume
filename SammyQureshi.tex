@@ -1,0 +1,271 @@
+\documentclass[12pt,a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=12in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Sammy Qureshi}}\\
+	Toronto, ON $\cdot$ saminm.qureshi@gmail.com $\cdot$ (647) 916-2963 \\
+\end{center}
+
+%==== Skills ====%
+\header{Skills}
+\begin{itemize}
+    \item Strong background in customer service, consistently delivering high-quality support and satisfaction.
+    \item Capable of thriving in both team-oriented and independent work environments.
+    \item Proficient in various computer applications: Point of Sale systems, Microsoft Excel, Microsoft Word.
+\end{itemize}
+\vspace{4mm}
+
+%==== Work Experience ====%
+\header{Work Experience}
+
+\textbf{Tim Hortons} \hfill Toronto, Ontario\\
+\textit{Team Member} \hfill July 2020 - Jan 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Processed customer transactions using the Point of Sale system, handling multiple payment methods with accuracy.
+	\item Collaborated with janitorial staff to ensure strict health and safety protocols were followed during the pandemic.
+	\item Enhanced customer experience by providing clear and efficient communication, both in-person and through technology.
+\end{itemize}
+
+\textbf{Monarch Park Collegiate Institute} \hfill Toronto, Ontario\\
+\textit{Lead Student Lab Technician} \hfill Sept 2019 - March 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Managed and coordinated three lab technician teams, ensuring adherence to lab maintenance plans and timely completion of tasks.
+	\item Served as the primary contact for labs, coordinating with external vendors and school administration to meet equipment and installation needs.
+	\item Responded promptly to emergency requests, reporting discrepancies and advising on repair procedures to school administration.
+\end{itemize}
+\vspace{4mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{Computer Programming \& Analysis Advanced Diploma}\hfill Toronto, Ontario\\
+George Brown College \hfill Jan 2024 - Present\\
+\vspace{3mm}
+
+\textbf{Monarch Park Collegiate Institute}\hfill Toronto, Ontario\\
+Ontario Secondary School Diploma \hfill Sept 2017 - June 2021\\
+\vspace{4mm}
+
+\end{document}
+
+
+% \documentclass[a4paper]{article}
+%     \usepackage{fullpage}
+%     \usepackage{amsmath}
+%     \usepackage{amssymb}
+%     \usepackage{textcomp}
+%     \usepackage[utf8]{inputenc}
+%     \usepackage[T1]{fontenc}
+%     \textheight=10in
+%     \pagestyle{empty}
+%     \raggedright
+%     \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+%     %\renewcommand{\encodingdefault}{cg}
+% %\renewcommand{\rmdefault}{lgrcmr}
+
+% \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% % DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+% \newcommand{\area} [2] {
+%     \vspace*{-9pt}
+%     \begin{verse}
+%         \textbf{#1}   #2
+%     \end{verse}
+% }
+
+% \newcommand{\lineunder} {
+%     \vspace*{-8pt} \\
+%     \hspace*{-18pt} \hrulefill \\
+% }
+
+% \newcommand{\header} [1] {
+%     {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+%     \vspace*{-6pt} \lineunder
+% }
+
+% \newcommand{\employer} [3] {
+%     { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+% }
+
+% \newcommand{\contact} [3] {
+%     \vspace*{-10pt}
+%     \begin{center}
+%         {\Huge \scshape {#1}}\\
+%         #2 \\ #3
+%     \end{center}
+%     \vspace*{-8pt}
+% }
+
+% \newenvironment{achievements}{
+%     \begin{list}
+%         {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+%     \end{list}
+% }
+
+% \newcommand{\schoolwithcourses} [4] {
+%     \textbf{#1} #2 $\bullet$ #3\\
+%     #4 \\
+%     \vspace*{5pt}
+% }
+
+% \newcommand{\school} [4] {
+%     \textbf{#1} #2 $\bullet$ #3\\
+%     #4 \\
+% }
+% % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+%     \begin{document}
+% \vspace*{-40pt}
+
+    
+
+% %==== Profile ====%
+% \vspace*{-10pt}
+% \begin{center}
+% 	{\Huge \scshape {Sam Qureshi}}\\
+% 	Toronto, ON $\cdot$ saminm.qureshi@gmail.com $\cdot$ (647) 916-2963 \\
+% 	www.linkedin.com/in/saminqureshi $\cdot$ www.github.com/blitzwolfz\\
+% \end{center}
+
+% %==== Education ====%
+% \header{Education}
+% \textbf{Ryerson University}\hfill Toronto, Ontario\\
+% Bachelor of Science in Applied Mathematics \hfill Sept 2021 - April 2025\\
+% \vspace{3mm}
+% \textbf{Monarch Park Collegiate Institute}\hfill Toronto, Ontario\\
+% Ontario Secondary School Diploma \hfill Sept 2017 - June 2021\\
+% \vspace{4mm}
+
+% \header{Technical Skills}
+% \begin{tabular}{ l l }
+% 	\textbf{Languages}:              & Java, TypeScript/JavaScript, Python, SQL                                        \\
+% 	\textbf{Frameworks}:             & NodeJS, ReactJS, PyUnit                                                         \\
+% 	\textbf{Libraries}:              & Express, Fastest Levenshtein, JSON (Python)                                     \\
+%     \textbf{Tools and Technologies}: & Git, MongoDB, VSCode, LaTeX, Excel, CRM, IntelliJ, Webstorm                     \\
+% 	\textbf{Interests}:              & Language Design, Natural Language Processing, Data Structures \\
+% \end{tabular}
+% \vspace{4mm}
+
+% \header{Technical Experience}
+% {\textbf{Meme Royale}} {\sl Typescript, Javascript, MongoDB, JSON} \hfill https://github.com/blitzwolfz/MemeRoyale\\
+% A backend software used to help run and manage an online tournament. Includes moderation tools, user tools, API data fetching. Application also utilized functional programming, and object oriented programming.\\
+% \vspace*{3mm}
+% {\textbf{Red}} {\sl Java} \hfill https://github.com/blitzwolfz/Red\\
+% A toy interpreter designed to teach the concepts behind creation of interpreters and the programming languages associated with them. Language was designed to have object-oriented design, inheritance, polymorphism. A modern day interpreted language.\\
+% \vspace*{3mm}
+% {\textbf{Password Manager}} {\sl Python, JSON} \hfill https://github.com/blitzwolfz/Password-Manager\\
+% A local TUI password manager designed to hold an offline copy of your passwords with associated data including usernames, and website links. Includes basic encryption using Base64 algorithm. Applications also utilized inheritance, polymorphism, and object-oriented based design.\\
+% \vspace*{4mm}
+
+% %==== Experience ====%
+% \header{Internship Experience}
+% \textbf{Ryerson University} \hfill Toronto Ontario\\
+% \textit{Hardware Assistant Internship} \hfill Oct 2022 - April 2023\\
+% \vspace{-1mm}
+% \begin{itemize} \itemsep 1pt
+% 	\item Responsible for safe disposable of old hardware. Made sure all data was wiped properly for disposing.
+% 	\item Point of contact for setting up new hardware, insuring they follow all hardware policies.   
+% 	\item Maintained general appearance, and kept the cleanliness of labs and other hardware rooms.
+% \end{itemize}
+% \textbf{Learning Enrichment Foundation} \hfill Toronto Ontario\\
+% \textit{Data Clerk Internship} \hfill June 2022 - Sept 2022\\
+% \vspace{-1mm}
+% \begin{itemize} \itemsep 1pt
+% 	\item Handled and verified client data on CRM. Ensured proper procedures were followed when handling data.
+% 	\item Worked with team using SCRUM framework to improve CRM and front-end features for end-user clients. Helped test and deploy new features.
+% 	\item Documented best practices, emphasis on Agile practices that would improve product development and deliverability.
+% \end{itemize}
+% \vspace{4mm}
+
+% \header{Work Experience}
+% \vspace{1mm}
+% \textbf{Monarch Park Collegiate Institute} \hfill Toronto, Ontario\\
+% \textit{Lead Student Lab Technician} \hfill Sept 2019 - March 2020\\
+% \vspace{-1mm}
+% \begin{itemize} \itemsep 1pt
+% 	\item Was responsible for managing 3 lab technician teams. Co-ordinated members of teams to finish tasks, while insuring lab maintenance plan was followed.
+% 	\item Was the main contact for labs, insuring requests for new parts, installation, and set up were met with outside vendors and School Admin.
+% 	\item Handled Emergency Requests when necessary, would report any discrepancies and advised on procedures for repairs to School Admin.
+% \end{itemize}
+% \textbf{Tim Hortons} \hfill Toronto, Ontario\\
+% \textit{Sales} \hfill Aug 2020 - Jan 2021\\
+% \vspace{-1mm}
+% \begin{itemize} \itemsep 1pt
+% 	\item Streamlined customer experience by effectively communicating either directly or technology assisted.
+% 	\item Worked on Point of Sales system, dealing with multiple methods of payments.
+% 	\item Coordinated with janitorial staff to ensure health and safety measures were efficiently implemented during the height of the pandemic.
+% \end{itemize}
+
+
+
+% \ 
+% \end{document}
